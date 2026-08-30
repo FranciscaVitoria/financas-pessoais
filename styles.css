@@ -372,3 +372,66 @@ html,body{font-family:var(--font-body);background:var(--bg);color:var(--ink)}
 
 /* v1.9 — interaction for monthly analysis bars */
 .analysis-month-group{cursor:pointer}.analysis-month-group:focus{outline:none}.analysis-month-group:focus .analysis-month-hit{stroke:var(--lavender);stroke-width:2;stroke-dasharray:4 4}.analysis-month-modal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.analysis-month-modal-grid>div{padding:12px 8px;border:1px solid var(--line);border-radius:14px;text-align:center;background:var(--surface)}.analysis-month-modal-grid span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink4);margin-bottom:5px}.analysis-month-modal-grid b{display:block;font-family:var(--font-display);font-size:16px}.analysis-month-count{text-align:center;margin:0 0 12px}
+
+/* v1.10 — análise verdadeiramente responsiva no iPhone: sem scroll horizontal */
+.analysis-v3,
+.analysis-v3 > *,
+.analysis-v3 .wide,
+.analysis-v3 .dashboard-panel,
+.analysis-v3 .analysis-feature,
+.analysis-v3 .analysis-deep-dive,
+.analysis-v3 .analysis-chart-scroll,
+.analysis-v3 .analysis-table-wrap{min-width:0;max-width:100%}
+
+@media(max-width:560px){
+  .analysis-v3{width:100%;overflow-x:hidden;gap:12px}
+  .analysis-v3 .kpi-grid{gap:8px}
+  .analysis-v3 .kpi-card{min-height:102px;padding:13px 12px;border-radius:18px}
+  .analysis-v3 .kpi-card>span:first-child{font-size:9px;margin-bottom:7px}
+  .analysis-v3 .kpi-card strong{font-size:19px;letter-spacing:-.3px}
+  .analysis-v3 .kpi-delta{font-size:9px;margin-top:6px}
+
+  .analysis-v3 .compact-analysis-toolbar{width:100%;gap:8px!important}
+  .analysis-v3 .analysis-period-tabs{max-width:100%;flex-wrap:wrap}
+  .analysis-v3 .analysis-period-tabs .period-tab{min-height:30px!important;padding:5px 9px!important;font-size:9px!important}
+  .analysis-v3 .analysis-compact-controls{width:100%;gap:6px}
+  .analysis-v3 .compact-control>summary{max-width:calc(100vw - 32px);min-height:34px!important;padding:6px 10px!important;font-size:10px!important;white-space:normal}
+  .analysis-v3 .compact-popover{width:100%!important;max-width:calc(100vw - 32px)!important;box-sizing:border-box}
+
+  .analysis-v3 .analysis-feature{width:100%;padding:14px 13px;border-radius:19px;overflow:hidden}
+  .analysis-v3 .analysis-feature .panel-heading{gap:8px;margin-bottom:9px}
+  .analysis-v3 .analysis-feature .panel-heading h2,
+  .analysis-v3 .analysis-deep-dive>h2{font-size:15px!important;line-height:1.2}
+  .analysis-v3 .analysis-sub{font-size:9px}
+  .analysis-v3 .analysis-eyebrow{font-size:8px}
+  .analysis-v3 .accum-value{font-size:23px}
+  .analysis-v3 .accum-head{gap:9px;margin-bottom:8px}
+  .analysis-v3 .accum-mini-grid{gap:5px}
+  .analysis-v3 .accum-mini-grid>div{padding:8px 6px;border-radius:11px}
+  .analysis-v3 .accum-mini-grid span{font-size:7px;letter-spacing:.045em}
+  .analysis-v3 .accum-mini-grid b{font-size:11px;margin-top:4px}
+
+  .analysis-v3 .analysis-chart-scroll{width:100%;overflow-x:hidden!important;overflow-y:hidden}
+  .analysis-v3 .analysis-chart{display:block;width:100%!important;max-width:100%!important;min-width:0!important;height:auto;max-height:220px}
+  .analysis-v3 .chart-y-label,.analysis-v3 .chart-x-label{font-size:8px}
+  .analysis-v3 .analysis-legend{gap:9px;font-size:9px;line-height:1.2;flex-wrap:wrap}
+  .analysis-v3 .legend-dot{width:7px;height:7px}
+
+  .analysis-v3 .category-chart-row{grid-template-columns:minmax(66px,86px) minmax(0,1fr) auto;gap:6px}
+  .analysis-v3 .category-chart-name{font-size:9px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .analysis-v3 .category-chart-track{height:15px}
+  .analysis-v3 .category-chart-row b{min-width:54px;font-size:10px;text-align:right}
+
+  .analysis-v3 .analysis-deep-dive{width:100%;overflow:hidden}
+  .analysis-v3 .analysis-table-wrap{width:100%;overflow:hidden;border-radius:15px}
+  .analysis-v3 .analysis-table{width:100%!important;min-width:0!important;table-layout:fixed}
+  .analysis-v3 .analysis-table th,.analysis-v3 .analysis-table td{padding:9px 2px!important;white-space:normal;overflow-wrap:anywhere}
+  .analysis-v3 .analysis-table th{font-size:7px!important;letter-spacing:.035em}
+  .analysis-v3 .analysis-table td{font-size:10px!important;font-variant-numeric:tabular-nums}
+  .analysis-v3 .analysis-table td:first-child{font-size:10px!important;width:28%}
+  .analysis-v3 .analysis-table .num{font-size:10px!important}
+
+  .analysis-month-modal-grid{gap:6px}
+  .analysis-month-modal-grid>div{padding:10px 5px}
+  .analysis-month-modal-grid b{font-size:14px}
+}
