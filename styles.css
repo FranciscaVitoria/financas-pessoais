@@ -501,3 +501,6 @@ html,body{max-width:100%;overflow-x:hidden}
     max-height:none!important;
   }
 }
+
+.accum-mini-period{display:block;margin-top:2px;font-size:9px;line-height:1.2;color:#9a99b4;font-weight:600;white-space:nowrap}
+@media(max-width:560px){.analysis-v3 .accum-mini-period{font-size:8px;white-space:normal}}
