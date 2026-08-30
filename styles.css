@@ -369,3 +369,6 @@ html,body{font-family:var(--font-body);background:var(--bg);color:var(--ink)}
   .analysis-more-filters .analysis-filters{grid-template-columns:1fr}
   .analysis-more-filters .analysis-filters .input{grid-column:auto}
 }
+
+/* v1.9 — interaction for monthly analysis bars */
+.analysis-month-group{cursor:pointer}.analysis-month-group:focus{outline:none}.analysis-month-group:focus .analysis-month-hit{stroke:var(--lavender);stroke-width:2;stroke-dasharray:4 4}.analysis-month-modal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:12px}.analysis-month-modal-grid>div{padding:12px 8px;border:1px solid var(--line);border-radius:14px;text-align:center;background:var(--surface)}.analysis-month-modal-grid span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--ink4);margin-bottom:5px}.analysis-month-modal-grid b{display:block;font-family:var(--font-display);font-size:16px}.analysis-month-count{text-align:center;margin:0 0 12px}
