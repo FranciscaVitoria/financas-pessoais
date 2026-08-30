@@ -504,3 +504,26 @@ html,body{max-width:100%;overflow-x:hidden}
 
 .accum-mini-period{display:block;margin-top:2px;font-size:9px;line-height:1.2;color:#9a99b4;font-weight:600;white-space:nowrap}
 @media(max-width:560px){.analysis-v3 .accum-mini-period{font-size:8px;white-space:normal}}
+
+/* v1.15 — Insights da Análise */
+.analysis-insights{min-width:0;overflow:hidden}
+.insights-note{margin:10px 0 14px;padding:10px 12px;border-radius:14px;background:#f7f3fb;color:#746b7d;font-size:12px;line-height:1.45}
+.analysis-insights-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.insight-pattern-card{min-width:0;padding:16px;border:1px solid var(--line,#ece6e2);border-radius:18px;background:#fff}
+.insight-pattern-card .insight-kicker{margin-bottom:8px;color:#8a8090;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.insight-pattern-card strong{display:block;margin:2px 0;font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1.15;color:#403a42}
+.insight-pattern-card strong small{font-family:inherit;font-size:12px;font-weight:400;color:#837b85}
+.insight-pattern-card p{margin:9px 0 0;color:#6f6872;font-size:13px;line-height:1.45}
+@media(max-width:560px){.analysis-insights-grid{grid-template-columns:1fr}.insight-pattern-card{padding:14px}.insight-pattern-card strong{font-size:20px}.insights-note{font-size:11.5px}}
+
+/* ---- v1.16 Visão mensal + deep-dive mensal ---- */
+.month-topbar{justify-content:center}
+.month-deep-dive{display:grid;gap:10px}
+.deep-dive-card{padding:0 16px;overflow:hidden}
+.deep-dive-subtitle{padding:14px 0 9px;font-size:10px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:var(--ink4)}
+.deep-category-row{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:10px;align-items:center;padding:11px 0;border-top:1px solid var(--line)}
+.deep-category-main{min-width:0}.deep-category-main b,.deep-pattern-row b{display:block;font-size:12px;color:var(--ink2)}
+.deep-category-main small,.deep-pattern-row small{display:block;margin-top:3px;font-size:10px;line-height:1.35;color:var(--ink4)}
+.deep-category-change{font-size:11px;font-weight:700;white-space:nowrap}
+.deep-pattern-row{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;padding:11px 0;border-top:1px solid var(--line)}
+@media(max-width:420px){.deep-dive-card{padding:0 13px}.deep-category-row{gap:8px}.deep-category-change{font-size:10px}.deep-category-main small,.deep-pattern-row small{font-size:9.5px}}
