@@ -478,3 +478,26 @@ html,body{max-width:100%;overflow-x:hidden}
   .analysis-v3 .analysis-table th:first-child,.analysis-v3 .analysis-table td:first-child{width:28%;font-size:9px!important}
   .analysis-v3 .analysis-table th:not(:first-child),.analysis-v3 .analysis-table td:not(:first-child){width:24%}
 }
+
+/* v1.12 — iPhone: keep cards fixed, scroll only inside analysis charts */
+@media(max-width:560px){
+  .analysis-v3 .analysis-chart-scroll{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    -webkit-overflow-scrolling:touch;
+    overscroll-behavior-x:contain;
+    touch-action:pan-x pan-y;
+  }
+  .analysis-v3 .analysis-chart{
+    display:block;
+    width:auto!important;
+    max-width:none!important;
+    min-width:max-content!important;
+    height:auto!important;
+  }
+  .analysis-v3 .comparison-bars{
+    max-height:none!important;
+  }
+}
